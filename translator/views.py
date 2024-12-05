@@ -35,5 +35,15 @@ class FrenchEnglishTranslationViewSet(APIView):
     def delete(self, request, pk):
         return Response(data={}, status=None)
 
+class AllTranslations(APIView):
+
+    def get(self, request):
+
+        data = {
+            "key": "value"
+        }
+        return Response(data=data, status=status.HTTP_200_OK)
+
+
 def index(request):
     return render(request, 'index.html', context={})
