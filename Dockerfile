@@ -1,6 +1,8 @@
 # Choose your OS system
 FROM python:3.13.0
 
+RUN pip install --no-cache-dir setuptools
+
 # Log level
 ENV PYTHONUNBUFFERED 1
 ENV GOOGLE_API_KEY Here_your_api_key
